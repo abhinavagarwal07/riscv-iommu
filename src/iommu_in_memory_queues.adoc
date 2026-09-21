@@ -821,7 +821,7 @@ interrupts from page-request-queue are enabled i.e. `pqcsr.pie` is 1.
 ], config:{lanes: 4, hspace:1024, fontsize:12}}
 ....
 
-The `DID` field holds the requester ID from the message. The `PID` field is
+The `DID` field holds the requester's `device_id`. The `PID` field is
 valid if `PV` is 1 and reports the PASID from message. `PRIV` is set to 0 if the
 message did not have a PASID, otherwise it holds the “Privilege Mode Requested”
 bit from the TLP. The `EXEC` bit is set to 0 if the message did not have a PASID,
